@@ -1,0 +1,128 @@
+/* CSS Variables */
+:root {
+    --primary-color: hsl(0, 0%, 0%);
+    --secondary-color: hsl(0, 0%, 7%);
+    --tertiary-color: hsl(0, 0%, 28%);
+    --accent-color: hsl(212, 56%, 51%);
+    --background-color: hsl(0, 0%, 98%);
+    --text-color: hsl(0, 0%, 0%);
+    --light-grey: hsl(0, 0%, 75%);
+    --white: hsl(0, 0%, 100%);
+  }
+  
+  /* Basic Styles */
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+  
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header Styles */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header.scrolled {
+    background-color: var(--secondary-color);
+  }
+  
+  .header a.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .nav a {
+    color: var(--white);
+  }
+  
+  .header .nav a:hover {
+    color: var(--light-grey);
+  }
+  
+  /* Hero Styles */
+  .hero {
+    padding: 10rem 0;
+    background-image: url('hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 4rem;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--accent-color);
+    border-radius: 5rem;
+    color: var(--white);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta:hover {
+    background-color: hsl(212, 56%, 41%);
+  }
+  
+  /* Features Styles */
+  .features {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size:
